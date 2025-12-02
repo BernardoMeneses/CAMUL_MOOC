@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMUL - Design & Innovation</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/pages.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-video-background">
+            <video muted loop playsinline>
+                <source src="assets/videos/Presentation_VisualComposition.mp4" type="video/mp4">
+            </video>
+            <div class="video-play-overlay" id="video-play-overlay">
+                <button class="video-play-btn" id="video-play-btn">
+                    <span class="play-icon">▶️</span>
+                    <span class="play-text">Clique para iniciar</span>
+                </button>
+            </div>
+        </div>
+        <div class="splash-overlay"></div>
+        <div class="splash-content">
+            <h1 class="splash-title">CAMUL</h1>
+            <p class="splash-subtitle">DESIGN & INNOVATION</p>
+            <div class="splash-controls" id="splash-controls" style="display: none;">
+                <button id="sound-toggle-btn" class="sound-toggle-btn" title="Desativar som">🔊</button>
+            </div>
+            <button id="start-journey-btn" class="start-journey-btn">START JOURNEY</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo">
+            <img src="assets/others/title.png" alt="CAMUL" class="logo-image">
+            CAMUL
+        </a>
+        <ul>
+            <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+            <li><a href="#" class="nav-link" data-page="about">About</a></li>
+            <li><a href="#" class="nav-link" data-page="projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home-page" class="page">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>DESIGN & INNOVATION</h1>
+                    <p class="subtitle">CONCEPÇÃO E AUTORIA MULTIMÉDIA</p>
+                    <p>We transform ideas into interactive experiences that blend creativity, technology, and design.</p>
+                    <a href="#" class="btn btn-primary scroll-to-about">START JOURNEY</a>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-video-container">
+                        <video autoplay muted loop playsinline>
+                            <source src="assets/videos/Presentation_VisualComposition.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">SCROLL DOWN</div>
+        </section>
+
+        <!-- Our Projects Section -->
+        <section id="our-projects" class="projects-showcase">
+            <div class="projects-content">
+                <div class="projects-text">
+                    <h2 class="section-title">OUR PROJECTS</h2>
+                    <h3>Creativity and Innovation in<br>Multimedia Design</h3>
+                    <p>Each project reflects our collective identity, a mix of design, sound, motion, and code. Discover how we bring concepts to life through interactive media.</p>
+                    <a href="#" class="btn nav-link" data-page="projects">LEARN MORE</a>
+                </div>
+                <div class="projects-preview">
+                    <div class="project-cards-stack">
+                        <div class="project-card-mini" data-project="yellow">
+                            <img src="assets/others/YELLOW.png" alt="Yellow Project" class="mini-project-img" />
+                        </div>
+                        <div class="project-card-mini" data-project="did">
+                            <img src="assets/others/D-ID.jpg" alt="D-ID Project" class="mini-project-img" />
+                        </div>
+                        <div class="project-card-mini" data-project="mooc">
+                            <img src="assets/others/MOOC.png" alt="MOOC Project" class="mini-project-img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about-us-section" class="wave-section">
+            <h2 class="section-title">ABOUT US</h2>
+            <p class="wave-subtitle">
+                The minds behind the creativity.
+            </p>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="assets/devs/Afonso_Barreira.jpg" alt="Afonso Barreira" class="team-photo">
+                        <h3>Afonso Barreira</h3>
+                        <p>Lead Writer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="assets/devs/Bernardo_Meneses.jpg" alt="Bernardo Meneses" class="team-photo">
+                        <h3>Bernardo Meneses</h3>
+                        <p>FullStack Developer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="assets/devs/Henrique_Pinto.jpg" alt="Henrique Pinto" class="team-photo">
+                        <h3>Henrique Pinto</h3>
+                        <p>UI/UX Designer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="assets/devs/João_Ribeiro.png" alt="João Ribeiro" class="team-photo">
+                        <h3>João Ribeiro</h3>
+                        <p>UI/UX Designer</p>
+                    </div>
+                </div>
+        </section>
+    </div>
+
+    <!-- About Us Page -->
+    <div id="about-page" class="page hidden">
+        <section style="padding-top: 120px;">
+            <h2 class="section-title">ABOUT US</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 4rem; color: rgba(255,255,255,0.8); font-size: 1.1rem;">
+                The minds behind the creativity.
+            </p>
+
+            <div class="team-grid">
+                    <div class="team-member">
+                        <img src="assets/devs/Afonso_Barreira.jpg" alt="Afonso Barreira" class="team-photo">
+                        <h3>Afonso Barreira</h3>
+                        <p>Lead Writer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="assets/devs/Bernardo_Meneses.jpg" alt="Bernardo Meneses" class="team-photo">
+                        <h3>Bernardo Meneses</h3>
+                        <p>FullStack Developer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="assets/devs/Henrique_Pinto.jpg" alt="Henrique Pinto" class="team-photo">
+                        <h3>Henrique Pinto</h3>
+                        <p>UI/UX Designer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="assets/devs/João_Ribeiro.png" alt="João Ribeiro" class="team-photo">
+                        <h3>João Ribeiro</h3>
+                        <p>UI/UX Designer</p>
+                    </div>
+                </div>
+
+            <div class="methodology-content">
+                <h3>OUR METHODOLOGY</h3>
+                <p>
+                    We are a multidisciplinary collective driven by creativity, technology, 
+                    and a shared belief in purposeful design. Our goal is simple yet ambitious: 
+                    to craft digital experiences that inform, inspire, and create meaningful connections. 
+                    
+                     This website is more than a showcase, it’s a living record of our shared journey, a space where experimentation meets craft, 
+                    where creativity and technology converge, and where our passion for innovation continues to grow.
+                </p>
+                <p>
+                    Our collaboration thrives on curiosity, mutual learning, and deep respect for the unique 
+                    perspectives each member brings. From insight-driven research and strategic planning to 
+                    thoughtful design and precise development, we work as one to transform ideas into impactful realities.
+                </p>
+                <p>
+                    Every project we take on is a reflection of our collective vision, clear, functional, and deeply human. 
+                    We design interfaces that feel intuitive, build tools that empower, and create educational content that 
+                    sparks engagement and understanding.
+                </p>
+                <p>
+                    This website is more than a showcase, it’s a living record of our shared journey, 
+                    a space where experimentation meets craft, where 
+                    creativity and technology converge, and where our passion for innovation continues to grow.
+                </p>
+            </div>
+        </section>
+
+        <section style="background: var(--color-dark-blue);">
+            <h2 class="section-title">OUR PROJECTS</h2>
+            <div class="projects-timeline-vertical">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item" onclick="navigateToProject('mooc')" style="cursor: pointer;">
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content">
+                        <div class="timeline-text">
+                            <h4>MOOC</h4>
+                        </div>
+                        <div class="timeline-card">
+                            <img src="assets/others/MOOC.png" alt="MOOC Project" class="timeline-img" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" onclick="navigateToProject('did')" style="cursor: pointer;">
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content">
+                        <div class="timeline-text">
+                            <h4>D-ID AVATAR</h4>
+                        </div>
+                        <div class="timeline-card">
+                            <img src="assets/others/D-ID.jpg" alt="D-ID Project" class="timeline-img" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" onclick="navigateToProject('yellow')" style="cursor: pointer;">
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content">
+                        <div class="timeline-text">
+                            <h4>A research project about cultural symbolism, emotions and visual impact about color yellow for society</h4>
+                        </div>
+                        <div class="timeline-card">
+                            <img src="assets/others/YELLOW.png" alt="Yellow Project" class="timeline-img" />
+                            </div>
+                        </div>
+                </div>           
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="#" class="btn btn-primary nav-link" data-page="projects">VIEW PROJECTS</a>
+            </div>
+        </section>
+
+        <!-- Frequent Questions Section -->
+        <section id="frequent-questions" class="faqs-section">
+            <h2 class="section-title">FREQUENT QUESTIONS</h2>
+            
+            <div class="faqs-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What's the purpose of this website?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>This website serves as a portfolio and informational platform showcasing our projects, providing a comprehensive understanding of our work.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What is CAMUL?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>CONCEPÇÃO E AUTORIA MULTIMÉDIA (CAMUL) is a course that is lectured at the master's level in Instituto Superior de Engenharia do Porto (ISEP), focusing on advanced topics in multimedia and communication.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What does the MOOC this portfolio has provide?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The MOOC (Massive Open Online Course) featured in this portfolio provides accessible, high-quality topics on Hybrid Solar panels, allowing learners worldwide to engage with advanced content at their own pace.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What kind of projects does this portfolio include?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>This portfolio includes a variety of projects that showcase our expertise in multimedia design, digital identity, and online education platforms.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How can I contact you?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can contact us by emailing us directly at 1250500@isep.ipp.pt.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Projects Page -->
+    <div id="projects-page" class="page hidden">
+        <!-- Projects Hero Section -->
+        <section class="projects-hero">
+            <h2 class="section-title">OUR PROJECTS</h2>
+            <p class="projects-subtitle">
+                Each project reflects our collective identity, a mix of design, sound, motion, and code. Discover how we bring concepts to life through interactive media.
+            </p>
+        </section>
+
+        <!-- Large Project Cards -->
+        <section class="projects-showcase-page">
+            <div class="large-projects-grid">
+                <div class="large-project-card" data-project="yellow">
+                    <div class="large-project-image">
+                        <img src="assets/others/YELLOW.png" alt="Yellow Project" />
+                    </div>
+                    <div class="large-project-overlay">
+                        <h4>Yellow!</h4>
+                        <p>The Color You Can't Ignore</p>
+                    </div>
+                </div>
+
+                <div class="large-project-card" data-project="did">
+                    <div class="large-project-image">
+                        <img src="assets/others/D-ID.jpg" alt="D-ID Project" />
+                    </div>
+                    <div class="large-project-overlay">
+                        <h4>Digital Avatar</h4>
+                        <p>Identity in the Digital Age</p>
+                    </div>
+                </div>
+
+                <div class="large-project-card" data-project="mooc">
+                    <div class="large-project-image">
+                        <img src="assets/others/MOOC.png" alt="MOOC Project" />
+                    </div>
+                    <div class="large-project-overlay">
+                        <h4>MOOC Platform</h4>
+                        <p>Massive Open Online Course</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Project Detail: MOOC -->
+    <div id="project-mooc" class="page hidden project-detail">
+        <section>
+            <div class="project-header">
+                <div>
+                    <div class="project-banner">
+                        <img src="assets/others/MOOC.png" alt="MOOC Project" class="project-banner-img" />
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h1>MOOC</h1>
+                    <p style="font-size: 1.2rem; color: var(--color-light-teal);">Massive Open Online Course</p>
+                    <p>
+                        A digital awareness project focused on renewable energy, showcasing how 
+                        hybrid solar panels (Abora) can revolutionize energy efficiency by 
+                        producing both electricity and heat simultaneously.
+                    </p>
+                    <p>
+                        To have complete access to the course, including classes qith instructors,
+                        quizzesc, and certification, please take the UDEMY link below...
+                    </p>
+                    <a href="#" class="btn btn-primary back-to-projects">← BACK TO PROJECTS</a>
+                </div>
+            </div>
+
+
+            <div class="project-details-section">
+                <div class="partners-logos">
+                    <a href="https://www.abora-solar.com" target="_blank" class="partner-link">
+                        <img src="assets/partners/ABORA.png" alt="ABORA SOLAR" class="partner-logo-simple">
+                    </a>
+                    <a href="https://www.isep.ipp.pt" target="_blank" class="partner-link">
+                        <img src="assets/partners/ISEP.png" alt="ISEP" class="partner-logo-simple">
+                    </a>
+                    <a href="https://www.udemy.com/course/eficiencia-evolucao-tecnologica-paineis-solares-hibridos-abora" target="_blank" class="partner-link">
+                        <img src="assets/partners/UDEMY.png" alt="UDEMY" class="partner-logo-simple">
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-details-section">
+                <h2>COURSE SLIDES</h2>
+                <div class="presentation-interface">
+                    <div class="modules-sidebar">
+                        <div class="sidebar-header">
+                            <h3>Course Modules</h3>
+                            <p>Navigate through interactive lessons</p>
+                        </div>
+                        <div class="modules-list">
+                            <!-- Module 01 -->
+                            <div class="module-item collapsed" data-module="1">
+                                <div class="module-header">
+                                    <div class="module-info" onclick="toggleModule(1)">
+                                        <span class="module-number">01</span>
+                                        <div class="module-title">
+                                            <h4>Paineis Solares Hibridos</h4>
+                                            <p>Contexto Historico e Tecnologico</p>
+                                        </div>
+                                    </div>
+                                    <button onclick="navigateToSlide(8); event.stopPropagation();" class="module-attend-btn">
+                                        ▶️ ATTEND
+                                    </button>
+                                    <span class="module-toggle" onclick="toggleModule(1)">▼</span>
+                                </div>
+                                <div class="module-content-expanded">
+                                    <div class="lesson-item" onclick="event.stopPropagation(); navigateToSlide(10);">
+                                        <span class="lesson-icon">📚</span>
+                                        <span class="lesson-name">01</span>
+                                    </div>
+                                    <div class="lesson-item" onclick="event.stopPropagation(); navigateToSlide(23);">
+                                        <span class="lesson-icon">📚</span>
+                                        <span class="lesson-name">02</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Module 02 -->
+                            <div class="module-item collapsed" data-module="2">
+                                <div class="module-header">
+                                    <div class="module-info" onclick="toggleModule(2)">
+                                        <span class="module-number">02</span>
+                                        <div class="module-title">
+                                            <h4>Tecnologia Abora</h4>
+                                            <p>ahTech e Inovação</p>
+                                        </div>
+                                    </div>
+                                    <button onclick="navigateToSlide(34); event.stopPropagation();" class="module-attend-btn">
+                                        ▶️ ATTEND
+                                    </button>
+                                    <span class="module-toggle" onclick="toggleModule(2)">▼</span>
+                                </div>
+                                <div class="module-content-expanded">
+                                    <div class="lesson-item" onclick="event.stopPropagation(); navigateToSlide(36);">
+                                        <span class="lesson-icon">📚</span>
+                                        <span class="lesson-name">01</span>
+                                    </div>
+                                    <div class="lesson-item" onclick="event.stopPropagation(); navigateToSlide(48);">
+                                        <span class="lesson-icon">📚</span>
+                                        <span class="lesson-name">02</span>
+                                    </div>
+                                    <div class="lesson-item" onclick="event.stopPropagation(); navigateToSlide(56);">
+                                        <span class="lesson-icon">📚</span>
+                                        <span class="lesson-name">03</span>
+                                    </div>
+                                
+                                </div>
+                            </div>
+
+                            <!-- Module 03 -->
+                            <div class="module-item collapsed" data-module="3">
+                                <div class="module-header">
+                                    <div class="module-info" onclick="toggleModule(3)">
+                                        <span class="module-number">03</span>
+                                        <div class="module-title">
+                                            <h4>Vantagens e Retorno</h4>
+                                            <p>Retorno de Investimento</p>
+                                        </div>
+                                    </div>
+                                    <button onclick="navigateToSlide(67); event.stopPropagation();" class="module-attend-btn">
+                                        ▶️ ATTEND
+                                    </button>
+                                    <span class="module-toggle" onclick="toggleModule(3)">▼</span>
+                                </div>
+                                <div class="module-content-expanded">
+                                    <div class="lesson-item" onclick="event.stopPropagation(); navigateToSlide(68);">
+                                        <span class="lesson-icon">📚</span>
+                                        <span class="lesson-name">01</span>
+                                    </div>
+                                    <div class="lesson-item" onclick="event.stopPropagation(); navigateToSlide(81);">
+                                        <span class="lesson-icon">📚</span>
+                                        <span class="lesson-name">02</span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <!-- Module 04 -->
+                            <div class="module-item collapsed" data-module="4">
+                                <div class="module-header">
+                                    <div class="module-info" onclick="toggleModule(4)">
+                                        <span class="module-number">04</span>
+                                        <div class="module-title">
+                                            <h4>Setores de Aplicação</h4>
+                                            <p>e Expansão Futura</p>
+                                        </div>
+                                    </div>
+                                    <button onclick="navigateToSlide(86); event.stopPropagation();" class="module-attend-btn">
+                                        ▶️ ATTEND
+                                    </button>
+                                    <span class="module-toggle" onclick="toggleModule(4)">▼</span>
+                                </div>
+                                <div class="module-content-expanded">
+                                    <div class="lesson-item" onclick="event.stopPropagation(); navigateToSlide(88);">
+                                        <span class="lesson-icon">📚</span>
+                                        <span class="lesson-name">01</span>
+                                    </div>
+                                    <div class="lesson-item" onclick="event.stopPropagation(); navigateToSlide(99);">
+                                        <span class="lesson-icon">📚</span>
+                                        <span class="lesson-name">02</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="presentation-container">
+                        <div class="canvas-embed-container">
+                            <iframe 
+                                id="mooc-presentation-iframe"
+                                src="https://www.canva.com/design/DAG3rIPFsaY/o6KpPSDywzYF4yKySTwizw/view?embed" 
+                                width="100%" 
+                                height="580"
+                                frameborder="0" 
+                                allowfullscreen="true" 
+                                title="MOOC Project Presentation">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Project Detail: Yellow -->
+    <div id="project-yellow" class="page hidden project-detail">
+        <section>
+            <div class="project-header">
+                <div>
+                    <div class="project-banner">
+                        <img src="assets/others/YELLOW.png" alt="Yellow Project" class="project-banner-img" />
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h1>YELLOW!</h1>
+                    <p style="font-size: 1.2rem; color: var(--color-yellow);">The Color You Can't Ignore</p>
+                    <p>
+                        A research-based project exploring the cultural meanings, emotional symbolism, 
+                        and visual impact of the color yellow in art, design, and society.
+                    </p>
+                    <a href="#" class="btn btn-primary back-to-projects">← BACK TO PROJECTS</a>
+                </div>
+            </div>
+
+            <div class="project-details-section">
+                <div class="partners-logos">
+                    <a href="https://www.isep.ipp.pt" target="_blank" class="partner-link">
+                        <img src="assets/partners/ISEP.png" alt="ISEP" class="partner-logo-simple">
+                    </a>
+                </div>
+            </div>
+            <div class="project-details-section">
+                <h2>PROJECT SLIDES</h2>
+                <div class="canvas-embed-container">
+                    <iframe 
+                        src="https://www.canva.com/design/DAGz0XorhbA/eFqh1Jm-gDHrSSa11ncUxA/view?embed" 
+                        width="100%" 
+                        height="600" 
+                        frameborder="0" 
+                        allowfullscreen="true" 
+                        title="Yellow Project Slides">
+                    </iframe>
+                    <p class="embed-note">Slides interativos sobre a psicologia da cor amarela</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Project Detail: D-ID -->
+    <div id="project-did" class="page hidden project-detail">
+        <section>
+            <div class="project-header">
+                <div>
+                    <div class="project-banner">
+                        <img src="assets/others/D-ID.jpg" alt="D-ID Project" class="project-banner-img" />
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h1>D-ID</h1>
+                    <p style="font-size: 1.2rem; color: var(--color-light-teal);">Digital Identity &amp; Privacy</p>
+                    <p>
+                        D-ID é um projeto de investigação que explora questões de identidade digital, 
+                        privacidade e a evolução da presença online.
+                    </p>
+                    <p>
+                        Analisamos como as tecnologias modernas afetam a forma como nos apresentamos 
+                        e interagimos no mundo digital.
+                    </p>
+                    <a href="#" class="btn btn-primary back-to-projects">← BACK TO PROJECTS</a>
+                </div>
+            </div>
+            <div class="project-details-section">
+                <div class="partners-logos">
+                    <a href="https://www.isep.ipp.pt" target="_blank" class="partner-link">
+                        <img src="assets/partners/ISEP.png" alt="ISEP" class="partner-logo-simple">
+                    </a>
+                </div>
+            </div>
+            
+
+            
+        </section>
+    </div>
+
+    <!-- Global Contact Section -->
+    <section class="projects-contact global-contact">
+        <p class="contact-intro">Looking for the dream team?</p>
+        <h2 class="contact-title">LET'S START</h2>
+        <div class="contact-buttons">
+            <div class="contact-item">
+                <span class="contact-info">1250500@isep.ipp.pt</span>
+            </div>
+            <div class="contact-item">
+                <span class="contact-info">+351 934564090</span>
+            </div>
+        </div>
+        <div class="faqs-link">
+            <button class="faqs-btn">FAQS</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 CAMUL - Design &amp; Innovation. All rights reserved.</p>
+        <p style="margin-top: 0.5rem;">Bernardo Meneses | Henrique Pinto | Afonso Barreira | João Pinto</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts/app.js"></script>
+</body>
+</html>
